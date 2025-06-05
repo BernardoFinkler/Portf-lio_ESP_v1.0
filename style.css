@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'playwrite';
+    src: url(fontes/PlaywriteDEGrund-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'funel';
+    src: url(fontes/FunnelDisplay-VariableFont_wght.ttf);
+}
+
+:root {
+    --cor01: #ED795A;
+    --cor02: #EDAC5A;
+    --cor03: #F59557;
+    --cor04: #F06056;
+    --cor05: #F55B11;
+}
+
+body.index {
+    background-color: var(--cor02);
+    margin: 0;
+}
+
+header.index {
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    background-image: linear-gradient(to top, var(--cor04), var(--cor02));
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+}
+
+header h1 {
+    font-family: 'playwrite';
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p{
+    font-family: 'funel';
+}
+
+.txt {
+    padding: 10px;
+}
+
+main.index {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 800px;
+    min-height: 650px;
+    height: auto;
+    text-align: center;
+}
+
+h2.subtitulo {
+    margin: 0 100px;
+    padding: 0;
+    font-family: 'playwrite';
+    background-image: linear-gradient(to right, #f559117c, #EDAC5A, #f559117c);
+}
+
+.apresentacao_pessoal {
+    font-family: 'funel';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+    max-width: 700px;
+    margin: 10px;
+    text-align: left;
+    margin: 50px;
+}
+
+.img_apresentacao_pessoal {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    border: 5px solid var(--cor05);
+}
+
+.txt_apresentacao {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.atividades {
+    font-family: 'funel';
+    background-color: #f5580f57;
+    border-radius: 10px;
+    min-height: 200px;
+    max-height: auto;
+    max-width: 700px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.subtitulo2 {
+    background-color: var(--cor01);
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 5px;
+    font-family: 'playwrite';
+}
+
+.botao {
+    font-weight: bolder;
+    display: inline-block; /* Faz com que o 'a' se comporte como um bloco mas mantenha o texto na mesma linha */
+    padding: 12px 25px;
+    margin: 5px;
+    background-color: var(--cor04);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor01);
+    box-shadow: 0 1px 10px #f5580f;
+}
+
+footer.index {
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 4px solid #d44400;
+}
+
+/*aqui pra cima e tudo index*/
+
+body.pag2 {
+    background-image: linear-gradient(135deg, var(--cor05), black);
+    min-height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.pag2{
+    text-align: center;
+    color: var(--cor05);
+    text-shadow: 5px 5px 5px black;
+    margin-top: 150px;
+}
+
+main.pag2{
+    font-family: 'funel';
+    background-color: var(--cor02);
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
+main.pag2 p{
+    color: white;
+    text-shadow: 1px 1px 1px #d443009d;
+}
+
+div#video_avaliacao_oral{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer.pag2{
+    text-align: center;
+    font-weight: bolder;
+}
