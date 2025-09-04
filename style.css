@@ -17,25 +17,25 @@
 }
 
 /* ==== correção para remover espaço embaixo do rodapé ==== */
+/* ===== PÁGINA 1 (INDEX) ===== */
+
+/* Estilos de base para toda a página */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* rodapés sem margem extra */
-footer.index, footer.pag2 {
-    margin: 0;
-    padding: 5px;
-}
-
-/* ================================== */
-
 body.index {
     background-color: var(--cor02);
     margin: 0;
+    /* Adicionando Flexbox para controlar o layout da página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
 }
 
+/* Header */
 header.index {
     font-style: normal;
     text-align: center;
@@ -62,6 +62,7 @@ header p{
     padding: 10px;
 }
 
+/* Main */
 main.index {
     background-color: white;
     margin: auto;
@@ -73,6 +74,7 @@ main.index {
     min-height: 650px;
     height: auto;
     text-align: center;
+    flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
 }
 
 h2.subtitulo {
@@ -129,7 +131,7 @@ h2.subtitulo {
 
 .botao {
     font-weight: bolder;
-    display: inline-block; /* Faz com que o 'a' se comporte como um bloco mas mantenha o texto na mesma linha */
+    display: inline-block;
     padding: 12px 25px;
     margin: 5px;
     background-color: var(--cor04);
@@ -147,6 +149,7 @@ h2.subtitulo {
     box-shadow: 0 1px 10px #f5580f;
 }
 
+/* Footer */
 footer.index {
     background-color: #f5580f;
     color: white;
@@ -160,49 +163,243 @@ footer.index {
 
 /*aqui pra cima e tudo index*/
 
+/* ===== PÁGINA 2 (vídeo) ===== */
+
 body.pag2 {
-    background-image: linear-gradient(135deg, var(--cor05), black);
-    min-height: 100vh;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--cor05), black);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'funel';
 }
 
-header.pag2{
+/* Header */
+header.pag2 {
     text-align: center;
     color: var(--cor05);
     text-shadow: 5px 5px 5px black;
-    margin-top: 150px;
+    padding: 50px 10px 20px 10px; /* espaçamento consistente */
 }
 
-main.pag2{
-    font-family: 'funel';
+header.pag2 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main (vídeo e descrição) */
+main.pag2 {
     background-color: var(--cor02);
-    min-width: 200px;
-    min-height: 200px;
     max-width: 600px;
-    max-height: 600px;
-    margin: auto;
-    border-radius: 25px;
+    margin: 20px auto;
+    border-radius: 20px;
     text-align: center;
     padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-main.pag2 p{
+main.pag2 p {
     color: white;
-    text-shadow: 1px 1px 1px #d443009d;
+    text-shadow: 1px 1px 2px #00000080;
+    margin-bottom: 20px;
 }
 
-div#video_avaliacao_oral{
-    padding: 10px 20px;
+/* Container do vídeo */
+div#video_avaliacao_oral {
+    padding: 10px;
     text-align: center;
 }
 
-footer.pag2{
-    text-align: center;
-    font-weight: bolder;
+/* Footer */
+footer.pag2 {
     background-color: #f5580f;
     color: white;
-    padding: 5px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: 'playwrite', sans-serif;
+    border-top: 4px solid #d44400;
+    margin-top: auto; /* empurra o rodapé pro fim da página */
+}
+
+/* ===== PÁGINA 3 (gincana) ===== */
+
+body.pag3 {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--cor01), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'funel';
+}
+
+/* Header */
+header.pag3 {
+    text-align: center;
+    color: var(--cor01);
+    text-shadow: 3px 3px 6px black;
+    padding: 40px 10px 20px 10px;
+}
+
+header.pag3 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main */
+main.pag3 {
+    background-color: var(--cor02);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer */
+footer.pag3 {
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.1rem;
+    border-top: 4px solid #d44400;
+    margin-top: auto;
+}
+
+/* ===== PÁGINA 4 (Arraia / Festa Junina) ===== */
+
+body.pag4 {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--cor03), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'funel';
+}
+
+/* Header */
+header.pag4 {
+    text-align: center;
+    color: var(--cor03);
+    text-shadow: 3px 3px 6px black;
+    padding: 40px 10px 20px 10px;
+}
+
+header.pag4 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main */
+main.pag4 {
+    background-color: var(--cor02);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer */
+footer.pag4 {
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.1rem;
+    border-top: 4px solid #d44400;
+    margin-top: auto;
+}
+
+/* ===== PÁGINA 5 (RPG) ===== */
+
+/* Estilos de base para toda a página */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body.pag5 {
+    /* Estilos do body combinados em um só lugar */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--cor04), black);
+    font-family: 'funel';
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header.pag5 {
+    text-align: center;
+    color: var(--cor04);
+    text-shadow: 3px 3px 6px black;
+    padding: 40px 10px 0px 10px;
+}
+
+header.pag5 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main */
+main.pag5 {
+    flex: 1; 
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto; 
+    text-align: center;
+    box-sizing: border-box;
+    background-color: transparent; 
+}
+
+/* Container das imagens */
+.imagem-rpg {
+    margin: 20px 0;
+}
+
+.imagem-rpg img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer.pag5 {
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.1rem;
     border-top: 4px solid #d44400;
 }
