@@ -16,6 +16,21 @@
     --cor05: #F55B11;
 }
 
+/* ==== correção para remover espaço embaixo do rodapé ==== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* rodapés sem margem extra */
+footer.index, footer.pag2 {
+    margin: 0;
+    padding: 5px;
+}
+
+/* ================================== */
+
 body.index {
     background-color: var(--cor02);
     margin: 0;
@@ -140,7 +155,6 @@ footer.index {
     font-family: 'playwrite', sans-serif;
     font-size: 1.2rem;
     margin-top: 0;
-    margin-bottom: 0;
     border-top: 4px solid #d44400;
 }
 
@@ -187,4 +201,8 @@ div#video_avaliacao_oral{
 footer.pag2{
     text-align: center;
     font-weight: bolder;
+    background-color: #f5580f;
+    color: white;
+    padding: 5px;
+    border-top: 4px solid #d44400;
 }
