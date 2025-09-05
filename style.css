@@ -403,3 +403,141 @@ footer.pag5 {
     font-size: 1.1rem;
     border-top: 4px solid #d44400;
 }
+
+.video-container {
+  text-align: center;
+}
+
+.video-container video {
+  max-width: 30%;
+  height: auto;
+}
+
+/* ===== PÁGINA 6 (Haikai) ===== */
+
+body.pag6 {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--cor02), black);
+    font-family: 'funel';
+}
+
+/* Header */
+header.pag6 {
+    text-align: center;
+    color: var(--cor02);
+    text-shadow: 3px 3px 6px black;
+    padding: 40px 10px 20px 10px;
+}
+
+header.pag6 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main */
+main.pag6 {
+    flex: 1;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--cor01);
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Texto */
+.texto-haikai {
+    font-family: 'funel';
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Imagens lado a lado */
+.container-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* quebra para baixo em telas pequenas */
+}
+
+.container-imagens img {
+    width: 45%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+footer.pag6 {
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.1rem;
+    border-top: 4px solid #d44400;
+    margin-top: auto;
+}
+
+/* ===== PÁGINA 7 (Clase de Programación / RPG C++) ===== */
+
+body.pag7 {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'funel';
+    background: linear-gradient(135deg, var(--cor05), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+header.pag7 {
+    text-align: center;
+    color: var(--cor05);
+    text-shadow: 3px 3px 6px black;
+    padding: 40px 10px 20px 10px;
+}
+
+header.pag7 h1 {
+    font-family: 'playwrite';
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Main */
+main.pag7 {
+    width: 90%;                  /* ocupa até 90% da largura da tela */
+    max-width: 800px;            /* máximo de 800px */
+    margin: 20px auto;           /* centraliza horizontalmente e dá espaço acima e abaixo */
+    padding: 28px;
+    background-color: var(--cor02);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.45);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer.pag7 {
+    margin-top: auto;             /* empurra o rodapé para o fim da página */
+    background-color: #f5580f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: 'playwrite', sans-serif;
+    font-size: 1.05rem;
+    border-top: 4px solid #d44400;
+}
